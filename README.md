@@ -1,3 +1,13 @@
 # Project Overview
 
-This project aims to create a data pipeline using Apache Airflow to automatically download podcasts from a given list of RSS feeds and store them in a local directory. The data pipeline is designed to be scalable, fault-tolerant, and easy to maintain.
+This is an Airflow DAG that scrapes a podcast RSS feed and downloads the audio files for new episodes. It then transcribes the audio files into text and stores the data in a SQLite database.
+
+## Requirements
+
+- Airflow
+- Vosk
+- PyDub
+- xmltodict
+- requests
+- SQLite
+- Setup
